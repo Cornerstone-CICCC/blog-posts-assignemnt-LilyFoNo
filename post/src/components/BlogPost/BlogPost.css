@@ -1,0 +1,13 @@
+.posts {
+    border: 1px solid red;
+}
+
+.posts div {
+    border: 1px solid white;
+}
+
+.posts h2 {
+    background: linear-gradient(45deg, #fd0000, #ff00ff, aqua);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
