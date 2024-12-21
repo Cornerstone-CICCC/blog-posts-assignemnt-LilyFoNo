@@ -1,5 +1,24 @@
 import BlogPost from "../BlogPost/BlogPost";
-import { BlogPostListProps } from "../types/interface";
+
+interface post {
+  userId: string;
+  id: string;
+  title: string;
+  body: string;
+  users: user[];
+}
+
+interface user {
+  id: string;
+  name: string;
+  username: string;
+  posts: post[];
+}
+
+interface BlogPostListProps {
+  posts: post[];
+  users: user[];
+}
 
 const BlogPostList = ({ posts, users }: BlogPostListProps) => {
   return (
